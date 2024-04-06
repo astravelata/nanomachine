@@ -1,0 +1,391 @@
+/*
+    CSS.
+    REAL CSS.
+    Not compiled from Sass or Less.
+
+    Unless you are fixing a structural bug, don't change this file.
+    Only change beauty.css and beauty.js.
+*/
+
+/* reset code */
+html , body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font , img, ins, kbd, label, legend,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, progress, section, summary,
+time, mark, audio, video {
+  margin:  0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* end reset code */
+
+
+/* BEGIN */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fafafa;
+    color: #151514;
+    padding: 1em;
+    font-size: 16px;
+    line-height: 1.3em;
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+a:link {
+    color: blue;
+    transition: color 1s;
+}
+
+a:visited {
+    color: purple;
+    transition: color 1s;
+}
+
+a.evergreen:visited {
+    color: blue;
+}
+
+a:hover {
+    color: blue;
+    transition: color 1s;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 1.7em;
+    line-height: 1.5em;
+    margin: 1em 0;
+}
+
+/* content - primary body copy */
+
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+    margin: 1.4em 0;
+    line-height: 1.5em;
+}
+
+#content h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#content h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#content h4 {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+#content h5, #content h6 {
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+#content {
+    margin-bottom: 2em;
+}
+
+#content img {
+    width: 100%;
+}
+
+#content p, #content pre {
+    margin: 1em 0;
+    line-height: 1.7em;
+}
+
+#content ul {
+    margin: 1em 0;
+    padding-left: 1em;
+    list-style-type: disc;
+}
+
+#content li {
+    line-height: 1.7em;
+}
+
+#content ul li ul, #content ul li ol {
+    margin-top: 0;
+}
+
+
+#content ol {
+    margin: 1em 0;
+    padding-left: 1em;
+    list-style-type: lower-roman;
+}
+
+#content ol li ol, #content ol li ul {
+    margin-top: 0;
+}
+
+#content hr {
+    margin: 2em;
+    border: 0;
+    border-top: 3px double #ccc;
+}
+
+#content blockquote {
+    color: #666;
+    border-left: 3px solid #ccc;
+    padding: 0 1em 0 1em;
+}
+
+#content blockquote blockquote {
+    font-style: italic;
+    padding-left: 1em;
+}
+
+#content pre {
+    margin: 1em 0;
+    white-space: pre;
+}
+
+#content pre code, #content code {
+    font-family: monospace;
+}
+
+#content em {
+    font-style: italic;
+}
+
+#content strong {
+    font-weight: bold;
+}
+
+#content video, #content audio {
+    width: 100%;
+    margin-top: 1em;
+}
+
+#content #solo-image-wrapper {
+    margin: 2em auto;
+}
+
+#content #solo-image {
+    border: 1px solid #ccc;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 40em;
+    margin: 0 auto;
+}
+
+
+/* navigation */
+#upper-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+#upper-nav #breadcrumb {
+    color: #666;
+}
+
+#upper-nav #breadcrumb a.home {
+    font-weight: bold;
+}
+
+#upper-nav + #main-nav {
+    border-top: 0;
+}
+
+nav {
+    padding: 1em 0;
+    margin: 1em 0;
+    border-top: 1px solid #000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav h3 {
+    font-weight: bold;
+    margin-bottom: 0.7em;
+    line-height: 1.2em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+nav ul.directory-navigation {
+    display: flex;
+}
+
+nav ul.directory-navigation li {
+    padding-right: 1em;
+}
+
+nav table {
+    margin-top: 1.3em;
+    width: 100%;
+}
+
+nav table.clickable {
+    cursor: pointer;
+}
+
+nav table.clickable tbody tr {
+    transition: background-color 0.8s;
+}
+
+nav table.clickable tbody tr:hover {
+    background-color: #57d8ff23;
+    transition: background-color 0.6s;
+}
+
+nav table.clickable tbody tr:hover td a:visited {
+    color: blue;
+    transition: color 1s;
+}
+
+nav table thead {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #666;
+    border-bottom: 1px solid #eee;
+}
+
+nav table thead td, nav table tr td {
+    padding: 0.3em 0;
+}
+
+nav table tr:nth-child(2n) {
+    background-color: #eee;
+}
+
+nav table tr td.rec, nav table tr td.type {
+    width: 2em;
+}
+
+footer {
+    border-top: 1px solid #000;
+    margin-top: 1em;
+    padding-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+footer p {
+    font-size: 0.8em;
+    color: #666;
+}
+
+footer #nerd-stats span.fast {
+    color: #060;
+}
+
+footer #nerd-stats span.slow {
+    color: #f00;
+}
+
+nav h4 {
+    font-weight: bold;
+    margin-top: 1.6em;
+    margin-bottom: 0.7em;
+}
+
+nav span.empty-dir {
+    display: block;
+    margin-top: 1.6em;
+}
+
+nav span.blank-state {
+    color: #666;
+    line-height: 1.6em;
+}
+
+nav ul.metadata {
+    margin-top: 1em;
+}
+
+nav ul.metadata li {
+    line-height: 1.6em;
+}
+
+#debug { 
+    display: none;
+}
+
+/* body.debug #debug {
+    display: block;
+    font-family: monospace;
+} */
+
+.hidden {
+    display: none;
+}
+
+.blink {
+    animation: blink 1s infinite; 
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity:  1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (orientation: portrait) {
+    nav table td.time { 
+        display: none;
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "astravelata/nanomachine",
+    "description": "A lightweight processor for a data directory.",
+    "type": "project",
+    "version": "0.0.1",
+    "license": "GPL-3.0",
+    "require": {
+        "kiwilan/php-audio": "^3.0",
+        "erusev/parsedown": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Astravelata\\Nanomachine\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "astravelata"
+        }
+    ]
+}

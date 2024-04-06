@@ -1,0 +1,11 @@
+; CORE VARIABLES
+title = My website                                  ; the site title.
+url = https://localhost:8080/                       ; the site's canonical uri.
+description = A website that moves fast.            ; the site's description    
+author = Anonymous Coward                           ; author
+author_email = root@localhost                       ; author's email
+
+; PERFORMANCE OPTIONS
+use_file_cache = true               ; cache the compiled static files in APCu
+sacrifice_speed_for_beauty = true   ; theme the site using beauty.{js,css}
+
